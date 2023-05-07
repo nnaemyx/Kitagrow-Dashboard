@@ -73,7 +73,7 @@ const Sidebar = () => {
               <CustomLink href="/summary" title="Summary" icon={<SummaryIcon/>}/>
             </div>
             <div className="flex items-center gap-1.5">
-              <CustomLink href="/home" title="Product List" icon={<ProductIcon/>}/>
+              <CustomLink href="/" title="Product List" icon={<ProductIcon/>}/>
             </div>
             <div className="flex items-center gap-1.5">
               <CustomLink href="/category" title="Category List" icon={<CategoryIcon/>}/>
