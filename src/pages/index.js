@@ -112,8 +112,8 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                  <div class="overflow-hidden">
-                    <table class="min-w-full  divide-gray-200">
+                  <div className="overflow-hidden">
+                    <table className="min-w-full  divide-gray-200">
                       <thead>
                         <tr>
                           <div className="flex gap-2 items-center">
@@ -125,7 +125,7 @@ export default function Home() {
                             </span>
                             <th
                               scope="col"
-                              class="py-3 text-left font-bold text-[14px] text-[#8D98AF] tracking-wider"
+                              className="py-3 text-left font-bold text-[14px] text-[#8D98AF] tracking-wider"
                             >
                               Product Name
                             </th>
@@ -136,7 +136,7 @@ export default function Home() {
                           </div>
                           <th
                             scope="col"
-                            class="px-6 py-3 text-left  text-xs font-medium text-gray-500  tracking-wider"
+                            className="px-6 py-3 text-left  text-xs font-medium text-gray-500  tracking-wider"
                           >
                             <div className="flex gap-2 items-center">
                               <h1 className="text-[14px] text-[#8D98AF] font-bold">
@@ -149,7 +149,7 @@ export default function Home() {
                           </th>
                           <th
                             scope="col"
-                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 tracking-wider"
+                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 tracking-wider"
                           >
                             <div className="flex gap-2 items-center">
                               <h1 className="text-[14px] text-[#8D98AF] font-bold">
@@ -162,7 +162,7 @@ export default function Home() {
                           </th>
                           <th
                             scope="col"
-                            class="px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
+                            className="px-6 py-3 text-left text-xs font-medium text-gray-500  tracking-wider"
                           >
                             <div className="flex gap-2 items-center">
                               <h1 className="text-[14px] text-[#8D98AF] font-bold">
@@ -176,23 +176,23 @@ export default function Home() {
                         </tr>
                       </thead>
 
-                      <tbody class="bg-white w-1/3 divide-y  divide-gray-200">
+                      <tbody className="bg-white w-1/3 divide-y  divide-gray-200">
                         <tr className="hover:bg-[#F6F6FF]">
-                          <td class=" py-4 w-[440px] whitespace-nowrap">
-                            <div class="flex gap-3 items-center">
+                          <td className=" py-4 w-[440px] whitespace-nowrap">
+                            <div className="flex gap-3 items-center">
                               <span className="w-[12px] rounded-[4px]">
                                 <input
                                   type="checkbox"
                                   className=" appearance-none border border-solid rounded-[4px] checked:bg-blue-600 h-[12px] w-[12px] shadow-sm border-[#D0D5DD] "
                                 />
                               </span>
-                              <div class="flex-shrink-0">
+                              <div className="flex-shrink-0">
                                 <Image
                                   src={Curology}
                                   alt="Curology Male Skin Care"
                                 />
                               </div>
-                              <div class="">
+                              <div className="">
                                 <div className="leading-[0.95rem]">
                                   <h1 className="text-[14px] font-bold">
                                     Curology Male Skin Care
@@ -204,13 +204,13 @@ export default function Home() {
                               </div>
                             </div>
                           </td>
-                          <td class="px-6 py-4 w-[150px] whitespace-nowrap">
-                            <div class="text-sm text-gray-900">120 pcs</div>
+                          <td className="px-6 py-4 w-[150px] whitespace-nowrap">
+                            <div className="text-sm text-gray-900">120 pcs</div>
                           </td>
-                          <td class="px-6 py-4 w-[150px] whitespace-nowrap">
-                            <div class="text-sm text-gray-900">$150</div>
+                          <td className="px-6 py-4 w-[150px] whitespace-nowrap">
+                            <div className="text-sm text-gray-900">$150</div>
                           </td>
-                          <td class="px-6 py-4 w-[220px] whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 w-[220px] whitespace-nowrap text-sm text-gray-500">
                             <div className="flex gap-4">
                               <Image alt="graph" src={Vector1} />
                               <p className="bg-[#ECFDF3] px-2 py-1 text-[12px] rounded-[20px] text-[#027A48]">
@@ -218,7 +218,7 @@ export default function Home() {
                               </p>
                             </div>
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                          <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <div className="flex gap-3">
                               <CopyIcon />
                               <EditIcon />
@@ -228,18 +228,18 @@ export default function Home() {
                         </tr>
 
                         <tr className="hover:bg-[#F6F6FF]">
-                          <td class=" py-4 w-[440px] whitespace-nowrap">
-                            <div class="flex gap-3 items-center">
+                          <td className=" py-4 w-[440px] whitespace-nowrap">
+                            <div className="flex gap-3 items-center">
                               <span className="w-[12px] rounded-[4px]">
                                 <input
                                   type="checkbox"
                                   className=" appearance-none border border-solid rounded-[4px] checked:bg-blue-600 h-[12px] w-[12px] shadow-sm border-[#D0D5DD] "
                                 />
                               </span>
-                              <div class="flex-shrink-0">
+                              <div className="flex-shrink-0">
                                 <Image src={Xbox} alt="Xbox Series X 2021" />
                               </div>
-                              <div class="">
+                              <div className="">
                                 <div className="leading-[0.95rem]">
                                   <h1 className="text-[14px] font-bold">
                                     Xbox Series X 2021
@@ -251,13 +251,13 @@ export default function Home() {
                               </div>
                             </div>
                           </td>
-                          <td class="px-6 py-4 w-[150px] whitespace-nowrap">
-                            <div class="text-sm text-gray-900">19 pcs</div>
+                          <td className="px-6 py-4 w-[150px] whitespace-nowrap">
+                            <div className="text-sm text-gray-900">19 pcs</div>
                           </td>
-                          <td class="px-6 py-4 w-[150px] whitespace-nowrap">
-                            <div class="text-sm text-gray-900">$899</div>
+                          <td className="px-6 py-4 w-[150px] whitespace-nowrap">
+                            <div className="text-sm text-gray-900">$899</div>
                           </td>
-                          <td class="px-6 py-4 w-[220px] whitespace-nowrap text-sm text-gray-500">
+                          <td className="px-6 py-4 w-[220px] whitespace-nowrap text-sm text-gray-500">
                             <div className="flex gap-4">
                               <Image alt="graph" src={Vector3} />
                               <p className="bg-[#FEF3F2] px-2 py-1 text-[12px] rounded-[20px] text-[#912018]">
@@ -265,7 +265,7 @@ export default function Home() {
                               </p>
                             </div>
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                          <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <div className="flex gap-3">
                               <CopyIcon />
                               <EditIcon />
@@ -275,7 +275,7 @@ export default function Home() {
                         </tr>
 
                         <tr className="hover:bg-[#F6F6FF]">
-                          <td class=" py-4 w-[440px] whitespace-nowrap">
+                          <td className=" py-4 w-[440px] whitespace-nowrap">
                             <div class="flex gap-3 items-center">
                               <span className="w-[12px] rounded-[4px]">
                                 <input
@@ -619,7 +619,7 @@ export default function Home() {
                         </tr>
 
                         <tr className="hover:bg-[#F6F6FF]">
-                          <td class=" py-4 w-[440px] whitespace-nowrap">
+                          <td className=" py-4 w-[440px] whitespace-nowrap">
                             <div class="flex gap-3 items-center">
                               <span className="w-[12px] rounded-[4px]">
                                 <input
