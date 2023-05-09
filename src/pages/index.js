@@ -1020,7 +1020,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mx-2 py-3 px-4 rounded-[12px] bg-white shadow-md fixed bottom-0 left-[3.2rem] -ml-6 h-[56px]">
+          <div className="mx-2 py-3 px-4 rounded-[12px] w-full bg-white shadow-md fixed bottom-0 left-[3.2rem] -ml-6 h-[56px]">
             <div className="flex gap-[3rem] 425:gap-[4.3rem] items-center">
               <div>
                 <span className="text-center ">
