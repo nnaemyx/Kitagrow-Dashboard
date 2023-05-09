@@ -487,446 +487,449 @@ const Newproduct = () => {
 
 
         {/* mobile design */}
-        <div className="md:block xl:hidden block">
-          <div className="flex items-center -ml-3 gap-3.5">
-            <Link href="/">
-              <span>
-                <PreviousIcon />
-              </span>
-            </Link>
-            <h1 className="text-[18px]">Add New Product</h1>
-          </div>
+        <form className="md:block xl:hidden block">
+          <div>
+            <div className="flex items-center -ml-3 gap-3.5">
+              <Link href="/">
+                <span>
+                  <PreviousIcon />
+                </span>
+              </Link>
+              <h1 className="text-[18px]">Add New Product</h1>
+            </div>
 
-          <div className="-ml-7 mt-6 overflow-x-scroll bg-gradient-to-r from-white to-white    hide-scroll relative rounded-[20px] shadow-sm h-[37px]">
-            <div className="px-4 pt-2 flex absolute   text-[12px] gap-12">
-              <div>
-                <Link href="/" className="text-[#443DF6]">
-                  Information
+            <div className="-ml-7 mt-6 overflow-x-scroll bg-gradient-to-r from-white to-white    hide-scroll relative rounded-[20px] shadow-sm h-[37px]">
+              <div className="px-4 pt-2 flex absolute   text-[12px] gap-12">
+                <div>
+                  <Link href="/" className="text-[#443DF6]">
+                    Information
+                  </Link>
+                  <hr className="w-[19px] mx-auto mt-2 border-[#443DF6]" />
+                </div>
+                <Link href="/" className="text-[#8D98AF]">
+                  Management
                 </Link>
-                <hr className="w-[19px] mx-auto mt-2 border-[#443DF6]" />
+                <Link href="/" className="text-[#8D98AF]">
+                  Details
+                </Link>
+                <Link href="/" className="text-[#8D98AF]">
+                  Media
+                </Link>
+                <Link href="/" className="text-[#8D98AF]">
+                  Variant
+                </Link>
               </div>
-              <Link href="/" className="text-[#8D98AF]">
-                Management
-              </Link>
-              <Link href="/" className="text-[#8D98AF]">
-                Details
-              </Link>
-              <Link href="/" className="text-[#8D98AF]">
-                Media
-              </Link>
-              <Link href="/" className="text-[#8D98AF]">
-                Variant
-              </Link>
             </div>
-          </div>
 
-          <div id="#productinformation" className=" mx-4 mt-6">
-            <div className="-ml-8">
-              <div
-                onClick={toggleDisclosure}
-                className="flex justify-between transition duration-150 ease-in-out items-center"
-              >
-                <button className="text-[20px] font-bold">
-                  Product Information
-                </button>
-                <div className="text-[#667085]">
-                  {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </div>
-              </div>
-              <hr className="w-full mt-4" />
-
-              {isOpen && (
-                <div className="mt-6">
-                  <form>
-                    <div className="flex text-[14px] justify-between">
-                      <p>Product Name</p>
-                      <p className="text-[#8D98AF]">0/90</p>
-                    </div>
-                    <input
-                      type="text"
-                      placeholder="ex. Product Brand - Product Type..."
-                      className="w-full h-[38px] placeholder:text-[14px] placeholder:text-[#667085] py-[10px] px-[12px] focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
-                    />
-                    <div className="flex flex-col mt-6 text-[14px]">
-                      <div className="flex flex-col">
-                        <label>Product Category</label>
-                        <div className="inline-block">
-                          <button className="inline-flex justify-between border border-solid rounded-[8px] w-full  h-[38px] px-2  items-center text-[14px]  text-[#667085]">
-                            Select Product Category
-                            <span className="text-[#D0D5DD]">
-                              <BiChevronDown size={20} />
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                      <div className="mt-6">
-                        <div className="flex justify-between">
-                          <label>Product ID</label>
-                          <p className="text-[#443DF6]">Copy</p>
-                        </div>
-                        <input
-                          type="text"
-                          placeholder="pr9459202"
-                          className=" bg-[#F0F3F7] h-[38px] placeholder:text-[14px] placeholder:text-[#667085] w-full px-2 focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
-                        />
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              )}
-            </div>
-          </div>
-          <hr className="w-full -ml-4 mt-6" />
-
-
-          <div className="mt-6 mx-4">
+            <div id="#productinformation" className=" mx-4 mt-6">
               <div className="-ml-8">
                 <div
-                  onClick={toggleDisclosure1}
+                  onClick={toggleDisclosure}
                   className="flex justify-between transition duration-150 ease-in-out items-center"
                 >
                   <button className="text-[20px] font-bold">
-                    Product Management
+                    Product Information
                   </button>
                   <div className="text-[#667085]">
-                    {isOpen1 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </div>
                 </div>
                 <hr className="w-full mt-4" />
 
-                {isOpen1 && (
+                {isOpen && (
                   <div className="mt-6">
                     <form>
-                      <div className="flex flex-col mt-6 text-[14px]">
-                        <div className="flex flex-col ">
-                          <label>Product Price</label>
-                          <input
-                            type="text"
-                            placeholder="$  Enter Product Price..."
-                            className=" border border-solid border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[366px]  xl:w-[296px] h-[38px] px-2  text-[14px]  text-[#667085]"
-                          />
-                        </div>
-                        <div className="flex flex-col mt-6">
-                          <label>Product Stock</label>
-                          <input
-                            type="text"
-                            placeholder="Enter Product Stock...                                       pcs"
-                            className=" h-[38px] placeholder:text-[14px] placeholder:text-[#667085] py-[10px] px-[12px] focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
-                          />
-                        </div>
+                      <div className="flex text-[14px] justify-between">
+                        <p>Product Name</p>
+                        <p className="text-[#8D98AF]">0/90</p>
                       </div>
-                      <hr className="w-full mt-6" />
-
-                      <div className="mt-6">
-                        <p className="text-[14px]">Shipping Insurance</p>
-                        <div className="flex mt-6 flex-col text-[14px]">
-                          <div className="flex gap-2">
-                            <input type="radio" className="w-[20px]" />
-                            <p>
-                              Required{" "}
-                              <span className="text-[#8D98AF]">
-                                (Obligate the buyer to active)
+                      <input
+                        type="text"
+                        placeholder="ex. Product Brand - Product Type..."
+                        className="w-full h-[38px] placeholder:text-[14px] placeholder:text-[#667085] py-[10px] px-[12px] focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
+                      />
+                      <div className="flex flex-col mt-6 text-[14px]">
+                        <div className="flex flex-col">
+                          <label>Product Category</label>
+                          <div className="inline-block">
+                            <button className="inline-flex justify-between border border-solid rounded-[8px] w-full  h-[38px] px-2  items-center text-[14px]  text-[#667085]">
+                              Select Product Category
+                              <span className="text-[#D0D5DD]">
+                                <BiChevronDown size={20} />
                               </span>
-                            </p>
+                            </button>
                           </div>
-
-                          <div className="flex mt-4 gap-2">
-                            <input type="radio" className="w-[20px]" />
-                            <p>
-                              Optional
-                              <span className="text-[#8D98AF]">
-                                (Give option to buyer to active or not)
-                              </span>
-                            </p>
+                        </div>
+                        <div className="mt-6">
+                          <div className="flex justify-between">
+                            <label>Product ID</label>
+                            <p className="text-[#443DF6]">Copy</p>
                           </div>
+                          <input
+                            type="text"
+                            placeholder="pr9459202"
+                            className=" bg-[#F0F3F7] h-[38px] placeholder:text-[14px] placeholder:text-[#667085] w-full px-2 focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
+                          />
                         </div>
                       </div>
                     </form>
                   </div>
                 )}
               </div>
-          </div>
-          <hr className="w-full -ml-4 mt-6" />
-              
+            </div>
+            <hr className="w-full -ml-4 mt-6" />
 
-          <div className="mx-4 mt-6">
-              <div className="-ml-8">
-                <div
-                  onClick={toggleDisclosure2}
-                  className="flex justify-between transition duration-150 ease-in-out items-center"
-                >
-                  <button className="text-[20px] font-bold">
-                    Product Details
-                  </button>
-                  <div className="text-[#667085]">
-                    {isOpen2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+
+            <div className="mt-6 mx-4">
+                <div className="-ml-8">
+                  <div
+                    onClick={toggleDisclosure1}
+                    className="flex justify-between transition duration-150 ease-in-out items-center"
+                  >
+                    <button className="text-[20px] font-bold">
+                      Product Management
+                    </button>
+                    <div className="text-[#667085]">
+                      {isOpen1 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    </div>
                   </div>
-                </div>
-                <hr className="w-full mt-4" />
+                  <hr className="w-full mt-4" />
 
-                {isOpen2 && (
-                  <div className="mt-6">
-                    <form>
-                      <div className="mt-4">
-                        <p className="text-[14px]">Product Condition</p>
-                        <div className="flex flex-col gap-6 mt-3 text-[14px]">
-                          <div className="flex gap-2">
-                            <input type="radio" className="w-[20px]" />
-                            <p>New Product</p>
-                          </div>
-
-                          <div className="flex gap-2">
-                            <input type="radio" className="w-[20px]" />
-                            <p>Already Used</p>
-                          </div>
-                          <div className="flex gap-2">
-                            <input type="radio" className="w-[20px]" />
-                            <p>Pre Order</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr className="w-full mt-6" />
-
-                      <div className="mt-6 text-[14px]">
-                        <div className="flex justify-between">
-                          <label>Product Description</label>
-                          <label>0/1200</label>
-                        </div>
-                        <textarea
-                          id="textarea"
-                          name="textarea"
-                          rows="5"
-                          placeholder="ex. tell your product specs, material, how to used, etc..."
-                          className="w-full h-[176px] placeholder:text-[#667085] focus:outline-none border border-solid rounded-[8px] px-2"
-                        ></textarea>
+                  {isOpen1 && (
+                    <div className="mt-6">
+                      <form>
                         <div className="flex flex-col mt-6 text-[14px]">
-                          <div className="block ">
-                            <label>Stock Keeping Unit Code</label>
+                          <div className="flex flex-col ">
+                            <label>Product Price</label>
                             <input
                               type="text"
-                              placeholder="Enter SKU Code..."
-                              className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[366px]  xl:w-[296px] h-[38px] px-2  text-[14px]  text-[#667085]"
+                              placeholder="$  Enter Product Price..."
+                              className=" border border-solid border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[366px]  xl:w-[296px] h-[38px] px-2  text-[14px]  text-[#667085]"
                             />
                           </div>
-                          <div className="mt-6">
-                            <div className="flex justify-between">
-                              <label>Product Weight</label>
-                            </div>
-                            <div className="flex items-center   relative">
-                              <input
-                                type="text"
-                                placeholder="Gram"
-                                className="border w-full  h-[38px] p-[8px] text-[14px] font-[400] rounded-[8px] focus:outline-none border-[#D0D5DD] border-solid"
-                              />
-                              <span className="absolute left-[3.5rem] w-[14.67px] text-[#667085] ">
-                                <span>
-                                  <IoIosArrowDown />
+                          <div className="flex flex-col mt-6">
+                            <label>Product Stock</label>
+                            <input
+                              type="text"
+                              placeholder="Enter Product Stock...                                       pcs"
+                              className=" h-[38px] placeholder:text-[14px] placeholder:text-[#667085] py-[10px] px-[12px] focus:outline-none rounded-[8px] border border-solid border-[#D0D5DD]"
+                            />
+                          </div>
+                        </div>
+                        <hr className="w-full mt-6" />
+
+                        <div className="mt-6">
+                          <p className="text-[14px]">Shipping Insurance</p>
+                          <div className="flex mt-6 flex-col text-[14px]">
+                            <div className="flex gap-2">
+                              <input type="radio" className="w-[20px]" />
+                              <p>
+                                Required{" "}
+                                <span className="text-[#8D98AF]">
+                                  (Obligate the buyer to active)
                                 </span>
-                              </span>
-                              <span className="absolute left-[5rem] text-[14px]  text-[#667085] ">
-                                <span>Enter Weight...</span>
-                              </span>
+                              </p>
+                            </div>
+
+                            <div className="flex mt-4 gap-2">
+                              <input type="radio" className="w-[20px]" />
+                              <p>
+                                Optional
+                                <span className="text-[#8D98AF]">
+                                  (Give option to buyer to active or not)
+                                </span>
+                              </p>
                             </div>
                           </div>
                         </div>
+                      </form>
+                    </div>
+                  )}
+                </div>
+            </div>
+            <hr className="w-full -ml-4 mt-6" />
+                
+
+            <div className="mx-4 mt-6">
+                <div className="-ml-8">
+                  <div
+                    onClick={toggleDisclosure2}
+                    className="flex justify-between transition duration-150 ease-in-out items-center"
+                  >
+                    <button className="text-[20px] font-bold">
+                      Product Details
+                    </button>
+                    <div className="text-[#667085]">
+                      {isOpen2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    </div>
+                  </div>
+                  <hr className="w-full mt-4" />
+
+                  {isOpen2 && (
+                    <div className="mt-6">
+                      <form>
+                        <div className="mt-4">
+                          <p className="text-[14px]">Product Condition</p>
+                          <div className="flex flex-col gap-6 mt-3 text-[14px]">
+                            <div className="flex gap-2">
+                              <input type="radio" className="w-[20px]" />
+                              <p>New Product</p>
+                            </div>
+
+                            <div className="flex gap-2">
+                              <input type="radio" className="w-[20px]" />
+                              <p>Already Used</p>
+                            </div>
+                            <div className="flex gap-2">
+                              <input type="radio" className="w-[20px]" />
+                              <p>Pre Order</p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr className="w-full mt-6" />
 
                         <div className="mt-6 text-[14px]">
-                          <label>Product Dimension</label>
-                          <div className="flex flex-col mt-2 gap-3">
-                            <div className="relative">
+                          <div className="flex justify-between">
+                            <label>Product Description</label>
+                            <label>0/1200</label>
+                          </div>
+                          <textarea
+                            id="textarea"
+                            name="textarea"
+                            rows="5"
+                            placeholder="ex. tell your product specs, material, how to used, etc..."
+                            className="w-full h-[176px] placeholder:text-[#667085] focus:outline-none border border-solid rounded-[8px] px-2"
+                          ></textarea>
+                          <div className="flex flex-col mt-6 text-[14px]">
+                            <div className="block ">
+                              <label>Stock Keeping Unit Code</label>
                               <input
-                                type="number"
-                                placeholder="Length"
-                                className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
+                                type="text"
+                                placeholder="Enter SKU Code..."
+                                className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[366px]  xl:w-[296px] h-[38px] px-2  text-[14px]  text-[#667085]"
                               />
-                              <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
-                                cm
-                              </span>
                             </div>
+                            <div className="mt-6">
+                              <div className="flex justify-between">
+                                <label>Product Weight</label>
+                              </div>
+                              <div className="flex items-center   relative">
+                                <input
+                                  type="text"
+                                  placeholder="Gram"
+                                  className="border w-full  h-[38px] p-[8px] text-[14px] font-[400] rounded-[8px] focus:outline-none border-[#D0D5DD] border-solid"
+                                />
+                                <span className="absolute left-[3.5rem] w-[14.67px] text-[#667085] ">
+                                  <span>
+                                    <IoIosArrowDown />
+                                  </span>
+                                </span>
+                                <span className="absolute left-[5rem] text-[14px]  text-[#667085] ">
+                                  <span>Enter Weight...</span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
 
-                            <div className="relative">
-                              <input
-                                type="number"
-                                placeholder="Width"
-                                className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
-                              />
-                              <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
-                                cm
-                              </span>
-                            </div>
-                            <div className="relative">
-                              <input
-                                type="number"
-                                placeholder="Heigth"
-                                className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
-                              />
-                              <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
-                                cm
-                              </span>
+                          <div className="mt-6 text-[14px]">
+                            <label>Product Dimension</label>
+                            <div className="flex flex-col mt-2 gap-3">
+                              <div className="relative">
+                                <input
+                                  type="number"
+                                  placeholder="Length"
+                                  className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
+                                />
+                                <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
+                                  cm
+                                </span>
+                              </div>
+
+                              <div className="relative">
+                                <input
+                                  type="number"
+                                  placeholder="Width"
+                                  className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
+                                />
+                                <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
+                                  cm
+                                </span>
+                              </div>
+                              <div className="relative">
+                                <input
+                                  type="number"
+                                  placeholder="Heigth"
+                                  className=" border border-solid w-full border-[#D0D5DD] focus:outline-none rounded-[8px]  2xl:w-[238px]  xl:w-[192px] h-[38px] px-2  text-[14px]  text-[#667085]"
+                                />
+                                <span className="absolute top-[0.5rem] text-[#667085] right-[1rem]">
+                                  cm
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
-                  </div>
-                )}
-              </div>
-          </div>
-          <hr className="w-full -ml-4 mt-6" />
-          
-
-
-          <div className="mx-4 mt-6">
-              <div className="-ml-8">
-                <div
-                  onClick={toggleDisclosure3}
-                  className="flex justify-between transition duration-150 ease-in-out items-center"
-                >
-                  <button className="text-[20px] font-bold">
-                    Product Media
-                  </button>
-                  <div className="text-[#667085]">
-                    {isOpen3 ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                  </div>
+                      </form>
+                    </div>
+                  )}
                 </div>
-                <hr className="w-full mt-4" />
+            </div>
+            <hr className="w-full -ml-4 mt-6" />
+            
 
-                {isOpen3 && (
-                  <div className="mt-6">
-                    <div>
-                      <h1>Product Thumbnails</h1>
-                      <p className="text-[12px] text-[#667085]">
-                        Upload image below with jpg or png format, minimum 1000
-                        x 1000 px (Square Dimension with 1:1 Ratio)
-                      </p>
-                    </div>
 
-                    <div className="flex gap-3 mt-4">
-                      <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[155px]">
-                        <div className="mx-auto items-center px-6 425:px-10 mt-6">
-                          <div className="pl-[1.67rem]">
-                            <ImageIcon />
-                          </div>
-                          <div>
-                            <h1 className="text-[14px] mt-4 text-[#8D98AF]">
-                            Upload image click here
-                            </h1>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[155px]">
-                        <div className="mx-auto items-center px-6 425:px-10  mt-6">
-                          <div className="pl-[1.67rem] ">
-                            <ImageIcon />
-                          </div>
-                          <div>
-                            <h1 className="text-[14px] mt-4 text-[#8D98AF]">
-                            Upload image click here
-                            </h1>
-                          </div>
-                        </div>
-                      </div>
-                  
-                   
+            <div className="mx-4 mt-6">
+                <div className="-ml-8">
+                  <div
+                    onClick={toggleDisclosure3}
+                    className="flex justify-between transition duration-150 ease-in-out items-center"
+                  >
+                    <button className="text-[20px] font-bold">
+                      Product Media
+                    </button>
+                    <div className="text-[#667085]">
+                      {isOpen3 ? <IoIosArrowUp /> : <IoIosArrowDown />}
                     </div>
-                    <div className="mt-6">
-                      <button className="border border-solid py-[6px] border-[#443DF6] w-full rounded-[8px] text-[#443DF6]">
-                        + Add More Thumbnail Slots
-                      </button>
-                    </div>
-                    <hr className="w-full mt-6" />
+                  </div>
+                  <hr className="w-full mt-4" />
 
+                  {isOpen3 && (
                     <div className="mt-6">
                       <div>
-                        <div className="flex items-center gap-3">
-                          <h1 className="flex gap-2">Product Video</h1>
-                          <p className="text-[12px] bg-[#ECFDF3] rounded-[20px] py-[2px] px-[8px] text-[#027A48]">
-                            Optional
-                          </p>
-                        </div>
+                        <h1>Product Thumbnails</h1>
                         <p className="text-[12px] text-[#667085]">
-                          Upload video below with mp4 or mov format, minimum 180
-                          seconds (Max. 50mb video size)
+                          Upload image below with jpg or png format, minimum 1000
+                          x 1000 px (Square Dimension with 1:1 Ratio)
                         </p>
                       </div>
 
-                      <div className="flex flex-col gap-3 mt-4">
-                        <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[184px]">
-                          <div className="mx-auto items-center px-16 mt-12">
-                            <div className="pl-[4.67rem] 425:pl-[6.67rem]">
-                              <VideoIcon />
+                      <div className="flex gap-3 mt-4">
+                        <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[155px]">
+                          <div className="mx-auto items-center md:px-20 px-6 425:px-10 mt-6">
+                            <div className="pl-[1.67rem]">
+                              <ImageIcon />
                             </div>
                             <div>
                               <h1 className="text-[14px] mt-4 text-[#8D98AF]">
-                                Upload video click here
+                              Upload image click here
                               </h1>
                             </div>
                           </div>
                         </div>
-
-                        <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[184px]">
-                          <div className="mx-auto items-center px-16  mt-12">
-                            <div className="pl-[4.67rem] 425:pl-[6.67rem]">
-                              <VideoIcon />
+                        <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[155px]">
+                          <div className="mx-auto items-center md:px-20 px-6 425:px-10  mt-6">
+                            <div className="pl-[1.67rem] ">
+                              <ImageIcon />
                             </div>
                             <div>
                               <h1 className="text-[14px] mt-4 text-[#8D98AF]">
-                                Upload video click here
+                              Upload image click here
                               </h1>
                             </div>
                           </div>
                         </div>
+                    
+                    
                       </div>
                       <div className="mt-6">
                         <button className="border border-solid py-[6px] border-[#443DF6] w-full rounded-[8px] text-[#443DF6]">
-                          + Add More Video Slots
+                          + Add More Thumbnail Slots
                         </button>
                       </div>
+                      <hr className="w-full mt-6" />
+
+                      <div className="mt-6">
+                        <div>
+                          <div className="flex items-center gap-3">
+                            <h1 className="flex gap-2">Product Video</h1>
+                            <p className="text-[12px] bg-[#ECFDF3] rounded-[20px] py-[2px] px-[8px] text-[#027A48]">
+                              Optional
+                            </p>
+                          </div>
+                          <p className="text-[12px] text-[#667085]">
+                            Upload video below with mp4 or mov format, minimum 180
+                            seconds (Max. 50mb video size)
+                          </p>
+                        </div>
+
+                        <div className="flex flex-col gap-3 mt-4">
+                          <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[184px]">
+                            <div className="mx-auto items-center px-16 mt-12">
+                              <div className="pl-[4.67rem] md:pl-[11.27rem] 425:pl-[6.67rem]">
+                                <VideoIcon />
+                              </div>
+                              <div>
+                                <h1 className="text-[14px] mt-4 text-[#8D98AF]">
+                                  Upload video click here
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="border text-center border-dashed border-[#D0D5DD] w-full rounded-[8px] h-[184px]">
+                            <div className="mx-auto items-center px-16  mt-12">
+                              <div className="pl-[4.67rem] md:pl-[11.27rem] 425:pl-[6.67rem]">
+                                <VideoIcon />
+                              </div>
+                              <div>
+                                <h1 className="text-[14px] mt-4 text-[#8D98AF]">
+                                  Upload video click here
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-6">
+                          <button className="border border-solid py-[6px] border-[#443DF6] w-full rounded-[8px] text-[#443DF6]">
+                            + Add More Video Slots
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+            </div>
+            <hr className="w-full -ml-4 mt-6" />
+
+            <div className="mx-4 mt-8">
+                <div className="-ml-8">
+                  <div
+                    onClick={toggleDisclosure4}
+                    className="flex justify-between transition duration-150 ease-in-out items-center"
+                  >
+                    <button className="text-[20px] font-bold">
+                      Product Variant
+                    </button>
+                    <div className="text-[#667085]">
+                      {isOpen4 ? <IoIosArrowUp /> : <IoIosArrowDown />}
                     </div>
                   </div>
-                )}
-              </div>
-          </div>
-          <hr className="w-full -ml-4 mt-6" />
+                  <hr className="w-full mt-4" />
 
-          <div className="mx-4 mt-8">
-              <div className="-ml-8">
-                <div
-                  onClick={toggleDisclosure4}
-                  className="flex justify-between transition duration-150 ease-in-out items-center"
-                >
-                  <button className="text-[20px] font-bold">
-                    Product Variant
-                  </button>
-                  <div className="text-[#667085]">
-                    {isOpen4 ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                  </div>
+                  {isOpen4 && (
+                    <div className="mt-6">
+                      <button className="border border-solid py-[6px] border-[#443DF6] w-full rounded-[8px] text-[#443DF6]">
+                        + Add Variant
+                      </button>
+                    </div>
+                  )}
                 </div>
-                <hr className="w-full mt-4" />
+            </div>
+            <hr className="w-full -ml-4 mt-6" />
+            
+            <div className="w-full shadow-sm h-[54px] mt-6 text-center justify-center items-center mb-4 rounded-[12px] mx-4 -ml-4 ">
+            <div className="flex px-1 py-1 gap-[10px]">
+                  <button className="py-[8px] px-[24px] 425:w-full border border-solid rounded-[8px] text-[#9EA9C1]">
+                    Save as Draft
+                  </button>
+                  <button className="py-[8px] px-[24px] 425:w-full border border-solid rounded-[8px] bg-[#F0F3F6] text-[#9EA9C1]">
+                    Publish Product
+                  </button>
+                </div>
+            </div>
 
-                {isOpen4 && (
-                  <div className="mt-6">
-                    <button className="border border-solid py-[6px] border-[#443DF6] w-full rounded-[8px] text-[#443DF6]">
-                      + Add Variant
-                    </button>
-                  </div>
-                )}
-              </div>
-          </div>
-          <hr className="w-full -ml-4 mt-6" />
-          
-          <div className="w-full shadow-sm h-[54px] mt-6 text-center justify-center items-center mb-4 rounded-[12px] mx-4 -ml-4 ">
-          <div className="flex px-1 py-1 gap-[10px]">
-                <button className="py-[8px] px-[24px] 425:w-full border border-solid rounded-[8px] text-[#9EA9C1]">
-                  Save as Draft
-                </button>
-                <button className="py-[8px] px-[24px] 425:w-full border border-solid rounded-[8px] bg-[#F0F3F6] text-[#9EA9C1]">
-                  Publish Product
-                </button>
-              </div>
           </div>
 
-        </div>
+        </form>
       </main>
     </>
   );
