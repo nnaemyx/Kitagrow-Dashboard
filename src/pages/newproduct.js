@@ -105,9 +105,9 @@ const Newproduct = () => {
                 )}
               </div>
 
-              <div className=" 2xl:w-[260px] xl:w-[260px] h-[276px] p-[24px] border border-solid border-[#EFEFF4] rounded-[8px] ">
+              <div className=" 2xl:w-[260px] xl:w-[260px] h-[276px] xl:p-[24px] md:p-[18px] border border-solid border-[#EFEFF4] rounded-[8px] ">
                 <h1 className="text-[14px] font-bold">Quick Access</h1>
-                <div className="xl:leading-[2.7rem] md:leading-7 mt-2 block text-[14px] text-[#667085]">
+                <div className="xl:leading-[2.7rem] md:leading-0 mt-2 block text-[14px] text-[#667085]">
                   <ul className="">
                     <Link href="#productinformation">
                       <li className="bg-[#F6F6FF] h-[38px] rounded-[8px] px-2 text-[#443DF6]">

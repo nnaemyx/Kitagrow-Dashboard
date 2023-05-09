@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="inline-block">
+              <div className="xl:inline-block md:hidden">
                 <div className="flex justify-between border border-solid rounded-[8px]   ">
                   <button
                     className="inline-flex justify-between h-[38px] w-[200px] px-2  items-center text-[14px]  text-[#667085]"
@@ -110,12 +110,17 @@ export default function Home() {
                   </div>
                 )}
               </div>
+              <div className="xl:hidden md:block">
+              <button className="rounded-[8px] border border-solid p-2 border-[#8D98AF]">
+                <FilterIcon />
+              </button>
+            </div>
             </div>
           </div>
 
           <section className="p-6">
             <div className="flex flex-col">
-              <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div className="-my-2 overflow-x-auto sm:-mx-8 ">
                 <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                   <div className="overflow-hidden">
                     <table className="min-w-full  divide-gray-200">
@@ -624,7 +629,7 @@ export default function Home() {
                         </tr>
 
                         <tr className="hover:bg-[#F6F6FF]">
-                          <td className=" py-4 w-[440px] whitespace-nowrap">
+                          <td className=" py-4  whitespace-nowrap">
                             <div class="flex gap-3 items-center">
                               <span className="w-[12px] rounded-[4px]">
                                 <input
@@ -664,11 +669,11 @@ export default function Home() {
                               </p>
                             </div>
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                          <td className="px-6  py-4 whitespace-nowrap text-right text-sm font-medium">
                             <div className="flex gap-3">
                               <CopyIcon />
                               <EditIcon />
-                              <DeleteIcon />
+                              <DeleteIcon/>
                             </div>
                           </td>
                         </tr>
