@@ -14,7 +14,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="mt-4 w-full">
+    <div className="mt-4 hidden md:block w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center ml-8  relative">
           <input

@@ -39,7 +39,7 @@ const CustomLink = ({href, title, className, icon}) => {
 
 const Sidebar = () => {
   return (
-    <div className="w-[232px] h-full mt-8">
+    <div className="w-[232px] hidden md:block h-full mt-8">
       <Logo />
       <hr className="w-[232px] mt-8" />
       <div className="mt-6">

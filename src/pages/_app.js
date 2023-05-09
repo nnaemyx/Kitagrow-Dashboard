@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full">
-        <div className="flex mx-6 gap-8">
+        <div className="flex md:mx-6 gap-8">
           <div>
             <Sidebar/>
           </div>
