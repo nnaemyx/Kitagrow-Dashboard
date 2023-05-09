@@ -36,6 +36,11 @@ body {
   right: 110%;
 }
 
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+  
+}
+
 .share_icon .tooltiptext::after {
   content: "";
   position: absolute;
