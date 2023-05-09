@@ -25,6 +25,7 @@ import Smartwatch from "/public/assests/smartwatch.png";
 import Vans from "/public/assests/vans classic.png";
 import Xboxseries from "/public/assests/xboxseriescontroller.png";
 import Ipad from "/public/assests/ipadpro.png";
+import Filter from '/public/assests/filter.png'
 import Lovecorn from "/public/assests/lovecorn.png";
 import Logittex from "/public/assests/logitex.png";
 import Chair from "/public/assests/tallchair.png";
@@ -110,11 +111,11 @@ export default function Home() {
                   </div>
                 )}
               </div>
-              <div className="xl:hidden md:block">
-              <button className="rounded-[8px] border border-solid p-2 border-[#8D98AF]">
-                <FilterIcon />
-              </button>
-            </div>
+              <div className="xl:hidden block md:block">
+                <button className="rounded-[8px] border border-solid p-2 border-[#8D98AF]">
+                  <FilterIcon />
+                </button>
+              </div>
             </div>
           </div>
 
@@ -673,7 +674,7 @@ export default function Home() {
                             <div className="flex gap-3">
                               <CopyIcon />
                               <EditIcon />
-                              <DeleteIcon/>
+                              <DeleteIcon />
                             </div>
                           </td>
                         </tr>
@@ -775,9 +776,9 @@ export default function Home() {
               </Link>
             </div>
 
-            <div>
+            <div className="block">
               <button className="rounded-[8px] border border-solid p-2 border-[#8D98AF]">
-                <FilterIcon />
+               <Image alt="filter" src={Filter}/>
               </button>
             </div>
           </div>
